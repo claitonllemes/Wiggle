@@ -11,28 +11,25 @@ O código abaixo fixa o primeiro bloco de uma página na plataforma Greatpages. 
 <br><a href="https://www.buymeacoffee.com/claitonllemes" target="_blank" rel="noopener noreferrer"><img src="https://user-images.githubusercontent.com/99222756/210372197-a1d41894-8acc-470b-ac38-2bd1ee0a4ed9.png" width="100%"/></a><br>
 
 ```html
-
 <style>
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
 
-    @keyframes float {
-  0% {
-    transform: translateY(0);
+    50% {
+      transform: translateY(-20px);
+    }
+
+    100% {
+      transform: translateY(0);
+    }
   }
 
-  50% {
-    transform: translateY(-20px);
+  .float {
+    animation: float 2s ease-in-out infinite;
   }
-
-  100% {
-    transform: translateY(0);
-  }
-}
-
-.float {
-  animation: float 2s ease-in-out infinite;
-}
 </style>
-
 
 <script>
   let wiggle = document.querySelectorAll(
@@ -49,6 +46,5 @@ O código abaixo fixa o primeiro bloco de uma página na plataforma Greatpages. 
   // Name: Wiggle for Greatpages.
   // Version: 1.0.0
   // Copyright© : Claiton Lemes
-```
-
 </script>
+```
