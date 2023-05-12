@@ -50,3 +50,5 @@ O código abaixo fixa o primeiro bloco de uma página na plataforma Greatpages. 
   // Version: 1.0.0
   // Copyright© : Claiton Lemes
 ```
+
+</script>
